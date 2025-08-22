@@ -68,3 +68,19 @@ print("Exercice 7 #######################")
 
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#Exo 8 : --------------------------------------------------
+liste9 = ['bonjour', 'aurevoire', 'bonsoir']
+resultat8 = []
+for mot in liste9:
+    # print("mot seul",mot)
+    # print("test set()",set(mot))
+    # print("longeur sans le set", len(mot))
+    # print("longeur avec le set", len(set(mot)))
+    nb_total = len(mot)
+    nb_diff = len(set(mot))
+    valeur = nb_diff / nb_total
+    resultat8.append((mot,valeur))
+print("Résultat avant tri",resultat8)
+resultat_ordonne = sorted(resultat8, key=lambda x: (x[1], x[0]))
+print("Résulat après tri de manière croissant",resultat_ordonne)
