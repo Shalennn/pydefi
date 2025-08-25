@@ -16,7 +16,7 @@ for i in range(1,3001):
     if(i%6==0):
         #ajout des zombies
         monstre[2] +=4
-        # il tue des chauves-souris
+        #! Attaque chauves-souris
         monstre[0] -= killChauv
     if(i%10==0):
         #ajout des fantomes
